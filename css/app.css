@@ -1,0 +1,551 @@
+/* Code below are for header page and are not necessary to edit. */
+
+/* CSS reset */
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Header page */
+
+.header {
+  align-items: center;
+  background: linear-gradient(
+  #FAB8EB,
+  #5bfdde 
+  );
+  background-attachment: fixed;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.header__box {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  height: 80%;
+  justify-content: space-around;
+  padding: 5rem;
+  text-align: center;
+  width: 50%;
+}
+
+.header__heading-main-lev {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+.header__intro-text {
+  color: #333;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.header__btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header__btn {
+  background-color: #eee;
+  border-radius: 2px;
+  color: #222;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  transition: all .2s ease-in;
+}
+
+/* 'Play with layout' button */
+.header__btn-01:hover {
+  background-color: #FAFF84;
+  color: #ffa15d;
+}
+
+/* 'Play with buttons' button */
+.header__btn-02:hover {
+  background-color: #FAB8EB;
+  color: #FAFF84;
+}
+
+/* 'Play with navigation' button */
+.header__btn-03:hover {
+  background-color: #84FFEC;
+  color: #F28EFF;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #333;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.footer-text {
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Utility */
+
+.padding-bottom {
+  padding-bottom: 5rem;
+}
+
+.padding-top {
+  padding-top: 5rem;
+}
+
+/* Edit codes (fonts and colours) below this line -----------------*/
+
+/* First page ========================================================*/
+
+.first-page {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.first-page__main-heading {
+  color: #222;
+  font-family: 'Lato', sans-serif;
+  font-size: 6rem;
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  /* letter-spacing: normal; */
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.first-page__main-heading--unique {
+  color: #F28EFF;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-size: 6rem; */
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  /* letter-spacing: normal; */
+  transition: .3s;
+}
+
+.first-page__main-heading--unique:hover {
+  color: #222;
+  /* font-family: 'Pacifico', sans-serif; */
+  /* font-size: 6rem; */
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  /* letter-spacing: normal; */
+  
+}
+
+.first-page__intro-text {
+  /* color: #000; */
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  /* font-weight: normal; */
+  /* line-height: normal; */
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+.first-page__small-layout {
+  display: flex;
+  flex-direction: row;
+  height: 55%;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.first-page__img-placeholder {
+  align-items: center;
+  background: linear-gradient(
+    -35deg,
+    #84FFEC,
+    #FAB8EB 
+  );
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.first-page__img-placeholder--text {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  width: 70%;
+}
+
+.first-page__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+  width: 70%;
+}
+
+.first-page__sub-heading {
+  /* color: #000; */
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  /* font-style: normal; */
+  font-weight: 900;
+  height: 10%;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.first-page__sub-heading:hover {
+  color: #ffa15d;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-size: 2rem; */
+  /* font-style: normal; */
+  /* font-weight: 900; */
+  /* letter-spacing: normal; */
+}
+
+.first-page__body-text-container {
+  column-count: 2;
+  column-fill: auto;
+  column-gap: 2rem;
+  height: 90%;
+  overflow-x: hidden;
+}
+
+.first-page__body-text {
+  /* color: #000; */
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7rem;
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  line-height: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+/* Second page =======================================================*/
+
+.second-page {
+  align-items: center;
+  background: linear-gradient(
+  #FAB8CC,
+  #FF8E92
+  );
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.second-page__main-heading {
+  color: #FFF;
+  font-family: 'Pacifico', cursive;
+  font-size: 6rem;
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  /* letter-spacing: normal; */
+  padding-bottom: 5rem;
+  transition: all .2s ease;
+}
+
+.second-page__main-heading:hover {
+  color: #a70c84;
+  /* font-family: 'Pacifico', cursive; */
+  /* font-size: 6rem; */
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  /* letter-spacing: normal; */
+}
+
+.second-page__body-text-container {
+  padding-bottom: 3rem;
+  width: 60%;
+}
+
+.second-page__body-text {
+  color: #FFF;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 2.25rem;
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  /* line-height: normal; */
+  padding-bottom: 3rem;
+  transition: all .2s ease;
+}
+
+.second-page__body-text:hover {
+  color: #480539;
+  /* font-family: 'Baloo Chettan 2', cursive; */
+  /* font-size: 2.25rem; */
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  /* line-height: normal; */
+}
+
+.second-page__btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50rem;
+}
+
+.second-page__cta-btn {
+  border-radius: 30px;
+  /* color: #000; */
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 2.25rem;
+  /* font-style: normal; */
+  font-weight: bolder;
+  /* letter-spacing: normal; */
+  padding: 1.5rem 1.5rem;
+  text-decoration: none;
+  transition: all .2s ease-in;
+  width: 20rem;
+}
+
+.cta-btn--01 {
+  background-color: #FAFF84;
+  border: 4px #FAFF84 solid;
+  color: #a70c84;
+  /* font-family: 'Baloo Chettan 2', cursive; */
+  /* font-size: 2.25rem; */
+  /* font-style: normal; */
+  /* font-weight: bolder; */
+  /* letter-spacing: normal; */
+}
+
+.cta-btn--01:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 4px #a70c84 solid;
+  color: #FAFF84;
+  /* font-family: 'Baloo Chettan 2', cursive; */
+  /* font-size: 2.25rem; */
+  /* font-style: normal; */
+  /* font-weight: bolder; */
+  /* letter-spacing: normal; */
+}
+
+.cta-btn--02 {
+  background-color: rgba(0,0,0,0);
+  border: 4px #a70c84 solid;
+  color: #FAFF84;
+  /* font-family: 'Baloo Chettan 2', cursive; */
+  /* font-size: 2.25rem; */
+  /* font-style: normal; */
+  /* font-weight: bolder; */
+  /* letter-spacing: normal; */
+}
+
+.cta-btn--02:hover {
+  background-color: #a70c84;
+  border: 4px  #a70c84 solid;
+  color: #84FFEC;
+  /* font-family: 'Baloo Chettan 2', cursive; */
+  /* font-size: 2.25rem; */
+  /* font-style: normal; */
+  /* font-weight: bolder; */
+  /* letter-spacing: normal; */
+}
+
+
+/* Third page ========================================================*/
+
+.third-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.third-page__main-heading {
+  color: #96c1f1;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 6rem;
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  letter-spacing: .5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s ease;
+  width: 100%;
+}
+
+.third-page__main-heading:hover {
+  color: #FAB8CC;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  /* font-size: 6rem; */
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  /* letter-spacing: normal; */
+}
+
+.third-page__intro-text {
+  color: #8d6f87;
+  font-family: 'Slabo 27px', serif;
+  font-size: 2.5rem;
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  line-height: 3.5rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  width: 60%;
+}
+
+.nav {
+  align-items: center;
+  border-bottom: #8d6f87 2px solid;
+  border-top: #8d6f87 2px solid;
+  display: flex;
+  height: 7.75rem;
+  width: 60%;
+}
+
+.nav__list-container {
+  display: flex;
+  height: 7.75rem;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.nav__list {
+  align-items: center;
+  display: flex;
+  width: 20%; 
+} 
+
+.nav__link {
+  align-items: center;
+  color: #8d6f87;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  /* font-style: normal; */
+  font-weight: bolder;
+  height: 7.3rem;
+  justify-content: center;
+  /* letter-spacing: normal; */
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease;
+  width: 100%;
+}
+
+.nav__link:hover {
+  background-color: #9d8297;
+  color: #c3dcf7;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-size: 2rem; */
+  /* font-style: normal; */
+  /* font-weight: bolder; */
+  /* letter-spacing: normal; */
+  
+}
+
+.nav__link:active {
+  background-color: #9d8297;
+  color: #FAB8CC;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-size: 2rem; */
+  /* font-style: normal; */
+  /* font-weight: bolder; */
+  /* letter-spacing: normal; */
+}
+
+.third-page__small-layout {
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+  margin: 0 auto;
+  padding-top: 5rem;
+  width: 70%;
+}
+
+.third-page__img-placeholder {
+  align-items: center;
+  background: linear-gradient(
+    -35deg,
+    #FAB8CC,
+    #a48c9f 
+  );
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.third-page__img-placeholder--text {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  width: 70%;
+}
+
+.third-page__text-container {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  width: 70%;
+}
+
+.third-page__sub-heading {
+  color: #FAB8CC;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  /* font-style: normal; */
+  font-weight: 900;
+  height: 10%;
+  /* letter-spacing: normal; */
+  padding-bottom: 4.5rem;
+  text-transform: none;
+  transition: .3s;
+}
+
+.third-page__sub-heading:hover {
+  color: #8d6f87;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-size: 3rem; */
+  /* font-style: normal; */
+  /* font-weight: 900; */
+}
+
+.third-page__body-text {
+  color: #333;
+  font-family: 'Slabo 27px', serif;
+  font-size: 2rem;
+  /* font-style: normal; */
+  line-height: 2.8rem;
+}
